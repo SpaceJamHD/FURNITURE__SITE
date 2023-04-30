@@ -108,7 +108,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background: url("/IMG/051-4.jpg") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/IMG/051-4.jpg") center no-repeat;
     background-size: cover;
     min-height: 820px;
     position: relative;
@@ -130,6 +130,27 @@ body {
     text-transform: uppercase;
     line-height: 1;
 }
+
+.intro__title:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(https://janeiredale.store/image/catalog/blog/znachenie-krasnogo-tsveta/znachenie-krasnogo-tsveta-6.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back1 20s linear infinite;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: 4s;
+}
+
+@keyframes back1 {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
 
 @keyframes back {
     100% {
@@ -193,14 +214,16 @@ body {
 .header__logo {
     font-size: 30px;
     font-weight: 700;
-    color: #292525;
+    color: #d4c7c7;
     cursor: pointer;
     font-family: 'Luckiest Guy', cursive;
     margin-top: -5px;
     font-size: 60px;
 }
 
-.main__nav__container .studio_furni p {}
+.main__nav__container .studio_furni p {
+    color: #e0d1d1;
+}
 
 .main__nav__container .studio_furni {
     font-weight: 600;
@@ -274,7 +297,7 @@ body {
     margin: 0 15px;
     position: relative;
 
-    color: #242325;
+    color: #7e7a81;
     text-decoration: none;
     font-size: 20px;
     font-family: 'Luckiest Guy', cursive;

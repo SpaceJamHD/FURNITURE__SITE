@@ -488,3 +488,698 @@ body {
     font-size: 24px;
     font-weight: 700;
 }
+
+/* ======================================== FREE ================================== */
+
+.self.main__free__container {
+    margin: 0;
+    padding: 200px 0 100px 0;
+}
+
+.main__free__container {
+    background: #151515;
+}
+
+.cards__free {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card__free {
+    display: flex;
+    background: #af7955;
+    width: 500px;
+    height: 250px;
+    border: 8px solid #42220c;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px #42220c) drop-shadow(0 0 10px #fd7015);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+}
+
+.card__free img {
+    width: 65%;
+}
+
+.card__free:nth-child(1) {}
+
+.card__free:nth-child(2) {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card__free .cena__free {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin: 0 0 40px 30px;
+}
+
+.card__free .cena__free::before {
+    border-bottom: 3px solid rgb(117, 63, 63);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    transform: rotate(-7deg);
+}
+
+.card__free .cena {
+    position: absolute;
+    font-size: 35px;
+    right: 15px;
+    top: 85px;
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.card__free:hover img {
+    transform: scale(.9);
+}
+
+.card__free:hover span {
+    transform: scale(1.2);
+    color: #af4804;
+    transition: 0.6s
+}
+
+.main__free__container .ckidki h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 100px #fd7015);
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* ================================== CARDS================================== */
+
+.main__card__container .ckidki h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 200px;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 100px #fd7015);
+    font-family: 'Luckiest Guy', cursive;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800;900&display=swap");
+
+.self.main__card__container {
+    margin: 0;
+    padding: 200px 0 200px 0;
+}
+
+
+.main__card__container {
+    background: #151515;
+
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.card:nth-child(1) {}
+
+.card:nth-child(2) {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.card:nth-child(3) {}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid #fd7015;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+}
+
+.card:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #fd7015;
+}
+
+.card .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img {
+    transition-delay: 0.75s;
+    top: 47%;
+    left: 82%;
+    height: 320px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+
+.card .content {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 3px;
+    margin-top: 15px;
+}
+
+.card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+.card .content p {
+    color: #fff;
+}
+
+.card .content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* ====================================== CARD______________TWO ======================== */
+
+.cards__two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cards__two .card {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.cards__two .card:hover {
+    width: 600px;
+    transition-delay: 0.5s;
+}
+
+.cards__two .card:nth-child(1) {}
+
+.cards__two .card:nth-child(2) {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.cards__two .card:nth-child(3) {}
+
+.cards__two .card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__two .card .circle::before {
+    content: "";
+    position: absolute;
+    top: 30;
+    left: 2;
+    right: 2;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    background: #191919;
+    border: 8px solid #fd7015;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+}
+
+.cards__two .card:hover .circle::before {
+    transition-delay: 0.5s;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: #fd7015;
+}
+
+.cards__two .card .circle .logo {
+    position: relative;
+    width: 250px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.cards__two .card:hover .circle .logo {
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.cards__two .card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotate(315deg);
+    height: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.cards__two .card:hover .product_img {
+    transition-delay: 0.75s;
+    top: 47%;
+    left: 82%;
+    height: 250px;
+    transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+
+.cards__two .card .content {
+    position: absolute;
+    width: 60%;
+    left: 10%;
+    padding: 20px 20px 20px 20px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.cards__two .card:hover .content {
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 3px;
+    margin-top: 15px;
+}
+
+.cards__two .card .content h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+.cards__two .card .content p {
+    color: #fff;
+}
+
+.cards__two .card .content a {
+    position: relative;
+    color: #fff;
+    background: #222222;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.main__card__container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+
+}
+
+.main__card__container a button:hover {
+    transition-delay: 0.5s;
+    width: 15%;
+    height: 20%;
+    border-radius: 20px;
+    background: #fd7015;
+    color: #fff;
+}
+
+.main__card__container a button {
+    padding: 30px 70px 30px 70px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    border-radius: 20%;
+    background: #191919;
+    border: 8px solid #fd7015;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s, 1s;
+    color: #fff;
+}
+
+/* ====================================== QUESTIONS ================================== */
+
+.self.main__question__container {
+    margin: 0;
+}
+
+.main__question__container {
+    background: #151515;
+}
+
+.faqs {
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+}
+
+.faqs h2 {
+    text-align: center;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+    margin-bottom: 50px;
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: #fdca21;
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+
+/* ======================================= CONTACT ============================= */
+.self.main__contact__container {
+    margin: 0;
+}
+
+.main__contact__container .section-title {
+    text-align: center;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+}
+
+.main__contact__container {
+    background: #151515;
+}
+
+#contact .contact {
+
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#contact .contact-items {
+    /* max-width: 400px; */
+    width: 100%;
+    display: flex;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+}
+
+#contact .contact-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #0000002c;
+    transition: 0.3s ease box-shadow;
+    background: #fd7015;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+}
+
+#contact .contact-item:hover {
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon {
+    width: 70px;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+/* ======================================== footer ============================ */
+
+
+.self.footer__started {
+    margin: 0;
+}
+
+.footer__started {
+    background: #232536;
+}
+
+.self.footer__header {
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+.footer__header {
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+.footer .footer__logo a {
+    font-weight: 500;
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.footer .menu {
+    margin-left: auto;
+    width: 30%;
+}
+
+.footer .menu ul {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+.footer .menu ul li a {
+    font-weight: 500;
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+}
+
+
+
+
+.middle__footer {
+    display: flex;
+    background: #2E3040;
+    width: 100%;
+
+}
+
+
+.middle__footer .description {
+    color: #FFFFFF;
+    width: 44%;
+    padding: 60px 0 60px 40px;
+}
+
+.middle__footer .input {
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.middle__footer .input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border: 1px solid #6D6E76;
+    background: #2E3040;
+    padding: 0 150px 0 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.middle__footer .button {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.dop__middle {
+    display: flex;
+}
+
+.self.footer__footer {
+    margin-top: 50px;
+}
+
+.footer__footer {
+    display: flex;
+    font-size: var(--size-Body-1);
+    line-height: var(--height-Body-1);
+    font-weight: var(--weight-Body-1);
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.footer__footer .text__second {
+    margin-top: -16px;
+}
+
+.footer .footer__footer .icons {
+    margin-left: auto;
+    width: 9%;
+}
+
+.footer .footer__footer .icons ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer__footer .icons ul li a {
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.middle__footer .button a {
+    background: #FFD050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    padding: 18px;
+}
+
+.footer .middle__footer .button a:hover {
+    background: #e03b3b;
+    transition: 1s;
+}
+
+
+.footer .middle__footer .button .butt {
+    font-weight: 500;
+    font-family: 'Luckiest Guy', cursive;
+    color: #080707;
+    filter: drop-shadow(0 0 10px #fd7015) drop-shadow(0 0 1000px #fd7015);
+}

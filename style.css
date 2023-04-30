@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bruno+Ace+SC&family=Luckiest+Guy&family=Permanent+Marker&family=Russo+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+body {
+    /* background: #E5E5E5; */
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+/* .container {
+    padding: 0 20px 0 60px;
+    flex: 1;
+} */
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* border: 3px solid rgb(138, 23, 23); */
+}
+
+.self.main__wrapper {
+    width: 100%;
+}
+
+.main__wrapper div {
+    /* border: 3px solid rgb(138, 23, 23); */
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 4px;
+    min-height: 40px;
+}
+
+.main__header__container {
+    padding: 0 20px 0 60px;
+    flex: 1;
+}
+
+.self.content__container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*===============================================================Intro */
+
+.container {
+    margin-top: -10px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("/IMG/051-4.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 820px;
+    position: relative;
+}
+
+.intro__inner {
+    text-align: center;
+}
+
+.intro__title {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeNUoeb1oXHsx5txRQGPSBNz6RZZTQQmL4FtECoHVoCNO7cp0Ayl8Mqp9-bLIBbchrSc&usqp=CAU);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.intro__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: #fff;
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+}
+
+/*=============================================================== Header */
+.header {
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header.fixed {
+    padding: 10px 0;
+
+    background-color: #eb8b8d;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+}
+
+.header.active {
+    background-color: #eb8b8d;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #292525;
+    cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: -5px;
+    font-size: 60px;
+}
+
+.main__nav__container .studio_furni p {}
+
+.main__nav__container .studio_furni {
+    font-weight: 600;
+    font-family: 'Bruno Ace SC', cursive;
+    margin-right: 20px;
+}
+
+/* ===============================================================================================*/
+.main__nav__container .cs-select {
+    color: white;
+    font-weight: 600;
+    background: transparent;
+    font-family: 'Luckiest Guy', cursive;
+    display: block;
+}
+
+.main__nav__container .cs-select option {
+    color: #000;
+}
+
+.main__nav__container .street {
+    position: relative;
+}
+
+.main__nav__container .street i {
+    position: absolute;
+    top: 30px;
+    right: 110px;
+}
+
+.main__nav__container .street {
+    margin-right: 0px;
+}
+
+
+/* ===============================================================================================*/
+
+.main__nav__container .person {
+    display: flex;
+    position: relative;
+}
+
+.main__nav__container .person img {
+    height: 80px;
+    border-radius: 40px;
+    margin-right: 180px;
+}
+
+.main__nav__container .person p {
+    position: absolute;
+    left: 100px;
+    top: 35px;
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.main__nav__container .person p:hover {
+    color: #fce38a;
+}
+
+/*=============================================================== Nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #242325;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    transform: color .1s linear;
+}
+
+.nav__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1 linear;
+    /* opacity  */
+}
+
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+.nav__link:hover::after,
+.nav__link.active::after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
+}
+
+/*=============================================================== nav-toggle */
+
+.nav-toggle {
+    width: 30px;
+    padding: 10px 0;
+    display: none;
+
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: none;
+    cursor: pointer;
+
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+}
+
+.nav-toggle:focus {
+    outline: 0;
+}
+
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    transition: background .2s linear;
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle__item::before,
+.nav-toggle__item::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background-color: #fff;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transition: transform .2s linear;
+}
+
+.nav-toggle__item::before {
+    top: -8px;
+}
+
+.nav-toggle__item::after {
+    bottom: -8px;
+}
+
+
+.nav-toggle.active .nav-toggle__item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
+
+/*=============================================================== Button */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 15px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+    /* background */
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/*=============================================================== Silder */
+
+.silder {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.silder__item {
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #fff;
+    opacity: .7s;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.silder__item.active {
+    opacity: 1;
+}
+
+.silder__item.active::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
+}
